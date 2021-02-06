@@ -51,7 +51,8 @@ body.fade-out {
       <b>(updated March 31, 2020)</b></div>
     <br>
     
-    <p id="food"></p>
+    arr.push(`<table style="width:100%"id="grouped-headers">`)
+    arr.push(`</table>`)
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
     <script type="text/javascript">
@@ -73,7 +74,7 @@ body.fade-out {
         // data comes through as a simple array since simpleSheet is turned on
         
         let arr = []
-arr.push(`<table style="width:100%"id="grouped-headers">`)
+
 
 arr.push(`<thead>`)
 arr.push(`<tr>`)
@@ -110,10 +111,10 @@ arr.push(`<tbody style="text-align:left">`)
         
   arr.push(`</tbody>`)
 
-arr.push(`</table>`)
 
 
-        document.getElementById("food").innerHTML = arr.join("\n");
+
+        document.getElementById("grouped-headers").innerHTML = arr.join("\n");
         console.log(data);
       }
 
