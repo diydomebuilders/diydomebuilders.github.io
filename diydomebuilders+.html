@@ -118,9 +118,6 @@ arr.push(`<tbody style="text-align:left">`)
 
         console.log(data);    
         
-        window.addEventListener('load', (event) => {
-  console.log('page is fully loaded');
-});
         
       }
 
@@ -129,9 +126,9 @@ arr.push(`<tbody style="text-align:left">`)
 
 
     
-  <script src="../tablefilter/tablefilter.js"></script>
+  <script src="../tablefilter/tablefilter.js" defer></script>
 
-<script data-config>
+<script data-config defer>
     var tfConfig = {
         base_path: '../tablefilter/',
 
