@@ -51,7 +51,7 @@ body.fade-out {
       <b>(updated March 31, 2020)</b></div>
     <br>
     
-    <table style="width:100%"id="grouped-header">
+    <table style="width:100%"id="grouped-headers">
     </table>
 
     <script type="text/javascript" src="papaparse.min.js"></script>
@@ -80,7 +80,7 @@ arr.push(`<thead>`)
 arr.push(`<tr>`)
 
     for (let [tabs, module] of Object.entries(data[0])) {
-    arr.push(`<th nowrap="">${tabs}<img src="../tablefilter/style/themes/updown.png"></th>`)
+    arr.push(`<th>${tabs}<img src="../tablefilter/style/themes/updown.png"></th>`)
 
     }
 
@@ -114,15 +114,16 @@ arr.push(`<tbody style="text-align:left">`)
 
 
 
-        document.getElementById("grouped-header").innerHTML = arr.join("\n");
+        document.getElementById("grouped-headers").innerHTML = arr.join("\n");
         console.log(data);
       }
 
  
     </script>
 
-
-<script src="../tablefilter/tablefilter.js"></script>
+    
+    window.addEventListener('load', (event) => {
+  <script src="../tablefilter/tablefilter.js"></script>
 
 <script data-config>
     var tfConfig = {
@@ -179,6 +180,13 @@ arr.push(`<tbody style="text-align:left">`)
   
     tf.init();
 </script>
+});
+
+
+    
+    
+    
+    
 <script>
 window.setTimeout(function (){
  return document.body.classList.remove('fade-out');
