@@ -120,7 +120,7 @@ arr.push(`<tbody style="text-align:left">`)
     </script>
 
 
-    
+    window.addEventListener('load', (event) => {});
   <script src="../tablefilter/tablefilter.js" defer></script>
 
 <script data-config>
@@ -175,10 +175,10 @@ arr.push(`<tbody style="text-align:left">`)
         extensions: [{ name: 'sort' }]
     };
     
-  window.addEventListener('load', (event) => {
+  
   var tf = new TableFilter('grouped-headers', tfConfig, 2);
      tf.init()
-});
+
  
  
 </script>
