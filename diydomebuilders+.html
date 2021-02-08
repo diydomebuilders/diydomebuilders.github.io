@@ -115,7 +115,13 @@ arr.push(`<tbody style="text-align:left">`)
 
 
         document.getElementById("grouped-headers").innerHTML = arr.join("\n");
-        console.log(data);
+
+        console.log(data);    
+        
+        window.addEventListener('load', (event) => {
+  console.log('page is fully loaded');
+});
+        
       }
 
  
@@ -177,13 +183,10 @@ arr.push(`<tbody style="text-align:left">`)
         extensions: [{ name: 'sort' }]
     };
     var tf = new TableFilter('grouped-headers', tfConfig, 2);
-  
-    window.addEventListener('load', (tf.init));
+  tf.init()
+ 
 </script>
 
-    
-    
-    
     
 <script>
 window.setTimeout(function (){
