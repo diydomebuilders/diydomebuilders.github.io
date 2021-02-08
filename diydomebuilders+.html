@@ -121,9 +121,7 @@ arr.push(`<tbody style="text-align:left">`)
  
     </script>
 
-    <script>
-    window.addEventListener('load', (event) => {});
-    </script>
+
     
   <script src="../tablefilter/tablefilter.js"></script>
 
@@ -180,11 +178,14 @@ arr.push(`<tbody style="text-align:left">`)
     };
     var tf = new TableFilter('grouped-headers', tfConfig, 2);
   
-    tf.init();
-
 
 </script>
 
+        <script>
+    window.addEventListener('load', (event) => {
+     tf.init();
+    });
+    </script>
     
     
     
