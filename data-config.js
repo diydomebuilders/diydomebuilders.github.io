@@ -1,4 +1,5 @@
 
+
     var tfConfig = {
         base_path: '../tablefilter/',
 
@@ -51,5 +52,5 @@
     };
     
   
-  var tf = new TableFilter('grouped-headers', tfConfig, 2);
-     tf.init()
+
+    
