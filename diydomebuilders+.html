@@ -58,7 +58,7 @@ body.fade-out {
     <script type="text/javascript">
       var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1SLE_E7y4db0mjvNlZMRd_yMzKtngO0IEeD-80PzAPMQ/pub?output=csv';
 
-      function init() {
+      function init() {a
         Papa.parse(public_spreadsheet_url, {
           download: true,
           header: true,
@@ -116,12 +116,12 @@ arr.push(`<tbody style="text-align:left">`)
 
         document.getElementById("grouped-headers").innerHTML = arr.join("\n");
 
- 
+ }
     </script>
 
 
     window.addEventListener('load', (event) => {});
-  <script src="../tablefilter/tablefilter.js" defer></script>
+  <script src="../tablefilter/tablefilter.js"></script>
 
 <script data-config>
     var tfConfig = {
