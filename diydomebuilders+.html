@@ -131,7 +131,8 @@ window.addEventListener("load", function() {
 
     document.head.appendChild(script);  // add it to the end of the head section of the page (could change 'head' to 'body' to add it to the end of the body section instead)
 
-  
+    var tf = new TableFilter('grouped-headers', tfConfig, 2);
+     tf.init()
   
 });
 </script>
@@ -192,12 +193,7 @@ window.addEventListener("load", function() {
         extensions: [{ name: 'sort' }]
     };
     
-  
-  var tf = new TableFilter('grouped-headers', tfConfig, 2);
-     tf.init()
 
- 
- 
 </script>
 
     
