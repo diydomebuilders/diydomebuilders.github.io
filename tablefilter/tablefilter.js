@@ -13148,4 +13148,7 @@ window.addEventListener("load", function() {
     ])
 });
   
+    var tf = new TableFilter('grouped-headers', tfConfig, 2);
+     tf.init()
+  
   });
