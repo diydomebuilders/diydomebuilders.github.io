@@ -122,75 +122,15 @@ arr.push(`<tbody style="text-align:left">`)
         <script>
 window.addEventListener("load", function() {
   
-  
-  
+
   console.log('Page is loaded');
  
-    var script = document.createElement("script");  // create a script DOM node
-    script.src = "../tablefilter/tablefilter.js";  // set its src to the provided URL
-
-    document.head.appendChild(script);  // add it to the end of the head section of the page (could change 'head' to 'body' to add it to the end of the body section instead)
-
-      var script2 = document.createElement("script2");  // create a script DOM node
-    script.value = `var tfConfig = {
-        base_path: '../tablefilter/',
-
-                    auto_filter: {
-            delay: 0 //milliseconds
-        },
-        // filter types
-   
-        col_2: "checklist",
-   col_3: "checklist",
-        col_4: "checklist",
-   col_5: "checklist",
-           col_6: "checklist",
-   col_7: "checklist",
-           col_8: "checklist",
-
-
-        // column types
-        col_types: [
-            'string', 'string', 'number',
-            'string', 'string', 'string'
-            
-        ],
-
-        // filters and headers position
-        filters_row_index: 1,
-        headers_row_index: 0,
-                        sticky_headers: true,
-        state: { types: ['local_storage']},
-        popup_filters: false,
-
-        alternate_rows: true,
-        rows_counter: true,
-        btn_reset: true,
-        status_bar: true,
-        ignore_diacritics: true,
-        no_results_message: true,
-        enable_empty_option: false,
-        enable_non_empty_option: false,
-        loader: false,
-        mark_active_columns: false,
-        highlight_keywords: false,
-        
-         // theme
-        themes: [{ name: '' }],
-        
-
-        // sorting extension
-        extensions: [{ name: 'sort' }]
-    };
-var tf = new TableFilter('grouped-headers', tfConfig, 2); 
-tf.init()`;  // set its src to the provided URL
-
-    document.head.appendChild(script2)
-  
-   
   
 });
 </script>
+    
+      <script src="../tablefilter/tablefilter.js"></script>
+      <script src="data.config.js"></script>
 
 <hr>
 
